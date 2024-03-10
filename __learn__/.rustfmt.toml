@@ -1,0 +1,12 @@
+edition = "2021"
+newline_style = "Unix"
+
+# these options are not stable
+# they do help catch formatting mistakes
+# when they're stable, enable
+# useful for the occasional run
+#format_code_in_doc_comments = true
+#reorder_impl_items = true
+#comment_width = 100
+#wrap_comments = true
+#normalize_comments = true
