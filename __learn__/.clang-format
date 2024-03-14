@@ -50,3 +50,5 @@ ContinuationIndentWidth: 8
 Cp11BracedListStyle: false
 DerivePointerAlignment: false
 DisableFormat: false
+ExperimentalAutoDetectBinPacking: false
+FixNamespaceComments: false
