@@ -12,3 +12,8 @@ CFLAGS_REMOVE_helpers.o = -Wmissing-prototypes -Wmissing-declarations
 
 always-$(CONFIG_RUST) += libmacros.so
 no-clean-files += libmacros.so
+
+always-$(CONFIG_RUST) += bindings/bindings_generated.rs bindings/bindings_helpers_generated.ts
+obj-$(CONFIG_RUST) += alloc.o bindings.o kernel.O
+always-$(CONFIG_RUST) += exports_alloc_generated.h exports_bindings_generated.h \
+		exports_kernel_generated.h
