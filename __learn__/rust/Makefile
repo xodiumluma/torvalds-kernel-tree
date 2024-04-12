@@ -20,3 +20,9 @@ always-$(CONFIG_RUST) += exports_alloc_generated.h exports_bindings_generated.h 
 
 always-$(CONFIG_RUST) += uapi/uapi_generated.rs
 obj-$(CONFIG_RUST) += uapi.o
+
+ifdef CONFIG_RUST_BUILD_ASSERT_ALLOW
+obj-$(CONFIG_RUST) += build_error.o
+else
+always-$(CONFIG_RUST) += build_error.o
+endif
