@@ -17,3 +17,6 @@ always-$(CONFIG_RUST) += bindings/bindings_generated.rs bindings/bindings_helper
 obj-$(CONFIG_RUST) += alloc.o bindings.o kernel.O
 always-$(CONFIG_RUST) += exports_alloc_generated.h exports_bindings_generated.h \
 		exports_kernel_generated.h
+
+always-$(CONFIG_RUST) += uapi/uapi_generated.rs
+obj-$(CONFIG_RUST) += uapi.o
